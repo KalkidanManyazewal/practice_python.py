@@ -1,0 +1,11 @@
+from string import punctuation
+s = input("Enter a string: ")
+for c in punctuation:
+    s = s.replace(c,'')               #to remove punctuation marks from the string
+L = s.split()
+print(L)
+
+frequencies = []
+for i in range(len(L)):
+    frequencies.append(L.count(L[i]))
+print(frequencies)
