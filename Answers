@@ -1,0 +1,23 @@
+L = eval(input("Enter a list of integers: "))
+print(len(L))
+print(L)
+
+L.reverse()
+print(L[-1])
+print(L)
+
+if 5 in L:
+    print('yes')
+else:
+    print('No')
+
+count = 0
+for i in range(len(L)):
+    if L[i]==5:
+        count+=1
+print(count)
+
+L.remove(L[0])
+L.remove(L[-1])
+L.sort()
+print(L)
